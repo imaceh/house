@@ -764,11 +764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\proyectos\\github\\house\\House\\House\\House\\House.Android\\House.Android.csproj",
+      "projectUniqueName": "E:\\proyectos\\github\\house\\House\\House.Android\\House.Android.csproj",
       "projectName": "House.Android",
-      "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House.Android\\House.Android.csproj",
+      "projectPath": "E:\\proyectos\\github\\house\\House\\House.Android\\House.Android.csproj",
       "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-      "outputPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House.Android\\obj\\",
+      "outputPath": "E:\\proyectos\\github\\house\\House\\House.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -785,8 +785,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "E:\\proyectos\\github\\house\\House\\House\\House\\House\\House.csproj": {
-              "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House\\House.csproj"
+            "E:\\proyectos\\github\\house\\House\\House\\House.csproj": {
+              "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House.csproj"
             }
           }
         }

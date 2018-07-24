@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("House.MainPage.xaml", "MainPage.xaml", typeof(global::House.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("es.dmoreno.house.MainPage.xaml", "MainPage.xaml", typeof(global::House.MainPage))]
 
 namespace House {
     

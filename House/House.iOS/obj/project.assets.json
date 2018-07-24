@@ -721,11 +721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\proyectos\\github\\house\\House\\House\\House\\House.iOS\\House.iOS.csproj",
+      "projectUniqueName": "E:\\proyectos\\github\\house\\House\\House.iOS\\House.iOS.csproj",
       "projectName": "House.iOS",
-      "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House.iOS\\House.iOS.csproj",
+      "projectPath": "E:\\proyectos\\github\\house\\House\\House.iOS\\House.iOS.csproj",
       "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-      "outputPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House.iOS\\obj\\",
+      "outputPath": "E:\\proyectos\\github\\house\\House\\House.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -742,8 +742,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\proyectos\\github\\house\\House\\House\\House\\House\\House.csproj": {
-              "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House\\House.csproj"
+            "E:\\proyectos\\github\\house\\House\\House\\House.csproj": {
+              "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House.csproj"
             }
           }
         }

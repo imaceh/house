@@ -348,11 +348,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\proyectos\\github\\house\\House\\House\\House\\House\\House.csproj",
+      "projectUniqueName": "E:\\proyectos\\github\\house\\House\\House\\House.csproj",
       "projectName": "House",
-      "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House\\House.csproj",
+      "projectPath": "E:\\proyectos\\github\\house\\House\\House\\House.csproj",
       "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-      "outputPath": "E:\\proyectos\\github\\house\\House\\House\\House\\House\\obj\\",
+      "outputPath": "E:\\proyectos\\github\\house\\House\\House\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

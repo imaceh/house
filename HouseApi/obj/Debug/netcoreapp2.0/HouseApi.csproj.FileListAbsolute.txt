@@ -1,0 +1,11 @@
+E:\proyectos\github\house\HouseApi\bin\Debug\netcoreapp2.0\HouseApi.deps.json
+E:\proyectos\github\house\HouseApi\bin\Debug\netcoreapp2.0\HouseApi.runtimeconfig.json
+E:\proyectos\github\house\HouseApi\bin\Debug\netcoreapp2.0\HouseApi.runtimeconfig.dev.json
+E:\proyectos\github\house\HouseApi\bin\Debug\netcoreapp2.0\HouseApi.dll
+E:\proyectos\github\house\HouseApi\bin\Debug\netcoreapp2.0\HouseApi.pdb
+E:\proyectos\github\house\HouseApi\obj\Debug\netcoreapp2.0\HouseApi.csprojAssemblyReference.cache
+E:\proyectos\github\house\HouseApi\obj\Debug\netcoreapp2.0\HouseApi.csproj.CoreCompileInputs.cache
+E:\proyectos\github\house\HouseApi\obj\Debug\netcoreapp2.0\HouseApi.AssemblyInfoInputs.cache
+E:\proyectos\github\house\HouseApi\obj\Debug\netcoreapp2.0\HouseApi.AssemblyInfo.cs
+E:\proyectos\github\house\HouseApi\obj\Debug\netcoreapp2.0\HouseApi.dll
+E:\proyectos\github\house\HouseApi\obj\Debug\netcoreapp2.0\HouseApi.pdb
