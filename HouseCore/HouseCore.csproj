@@ -5,4 +5,8 @@
     <RootNamespace>es.dmoreno.house.core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="dto\" />
+  </ItemGroup>
+
 </Project>
