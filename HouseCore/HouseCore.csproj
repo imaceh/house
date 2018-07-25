@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="dto\" />
+    <ProjectReference Include="..\..\utils\ns.utils.csproj" />
   </ItemGroup>
 
 </Project>
