@@ -5,7 +5,7 @@ using System.Text;
 
 namespace es.dmoreno.house.core.dto
 {
-    [TableAttributte]
+    [TableAttribute]
     public class DTOHouseBase
     {
         [FieldAttribute(FieldName = "id", IsAutoincrement = true, Type = ParamType.Int32, IsPrimaryKey = true)]

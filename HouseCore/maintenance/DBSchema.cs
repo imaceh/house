@@ -6,5 +6,6 @@ namespace es.dmoreno.house.core.maintenance
 {
     internal class DBSchema
     {
+
     }
 }
