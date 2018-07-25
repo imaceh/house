@@ -1,4 +1,7 @@
-﻿using es.dmoreno.utils.dataaccess.db;
+﻿using es.dmoreno.house.core.dto;
+using es.dmoreno.utils.dataaccess.db;
+using es.dmoreno.utils.dataaccess.textplain;
+using es.dmoreno.utils.serialize;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,15 +15,25 @@ namespace es.dmoreno.house.core
 
         private Logic _db_logic;
 
-        public Core()
+        public Core(string config_file)
         {
-            this.initialize(ECoreModePersistence.DB, DBMSType.SQLite);
+            this.initialize(config_file);
         }
 
-        private void initialize(ECoreModePersistence mode, DBMSType dbms)
+        private void initialize(string config_file)
         {
-            this._mode = mode;
-            this._dbms_type = dbms;
+            using (TextPlainFile tp = new TextPlainFile(config_file))
+            {
+                if (tp.open())
+                {
+                    tp.set(JSon.serializeJSON<DTOConfig>(new DTOConfig() {
+                        DataBase = new DTOConfigDB() {
+                            DBMS = "SQLite",
+                            Host = "database.db"
+                        }
+                    })).Wait();
+                }
+            }
         }
     }
 }

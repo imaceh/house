@@ -11,16 +11,16 @@ namespace es.dmoreno.house.core.dto
         [DataMember(IsRequired = true, Name = "host")]
         public string Host { get; set; }
 
-        [DataMember(IsRequired = true, Name = "port")]
+        [DataMember(IsRequired = false, Name = "port")]
         public int Port { get; set; }
 
-        [DataMember(IsRequired = true, Name = "name")]
+        [DataMember(IsRequired = false, Name = "name")]
         public string Name { get; set; }
 
-        [DataMember(IsRequired = true, Name = "user")]
+        [DataMember(IsRequired = false, Name = "user")]
         public string User { get; set; }
 
-        [DataMember(IsRequired = true, Name = "password")]
+        [DataMember(IsRequired = false, Name = "password")]
         public string Password { get; set; }
 
         [DataMember(IsRequired = true, Name = "dbms")]

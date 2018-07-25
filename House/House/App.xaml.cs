@@ -1,3 +1,4 @@
+using es.dmoreno.house.core;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,6 +11,10 @@ namespace House
 		public App ()
 		{
 			InitializeComponent();
+
+            Core c;
+
+            c = new Core();
 
 			MainPage = new MainPage();
 		}
