@@ -1,5 +1,7 @@
 using es.dmoreno.house.core;
+using es.dmoreno.utils.path;
 using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,7 +16,7 @@ namespace House
 
             Core c;
 
-            c = new Core();
+            c = new Core(Path.Combine(PathHelper.getAppDataFolder(), "config.json"));
 
 			MainPage = new MainPage();
 		}
