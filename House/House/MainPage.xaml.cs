@@ -1,5 +1,8 @@
-﻿using System;
+﻿using es.dmoreno.house.core;
+using es.dmoreno.utils.path;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +15,7 @@ namespace House
 		public MainPage()
 		{
 			InitializeComponent();
-		}
+           
+        }
 	}
 }

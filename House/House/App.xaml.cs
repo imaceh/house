@@ -14,17 +14,16 @@ namespace House
 		{
 			InitializeComponent();
 
-            Core c;
-
-            c = new Core(Path.Combine(PathHelper.getAppDataFolder(), "config.json"));
-
 			MainPage = new MainPage();
 		}
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            // Handle when your app starts
+            Core c;
+
+            c = new Core(Path.Combine(PathHelper.getAppDataFolder(), "config.json"));
+        }
 
 		protected override void OnSleep ()
 		{
