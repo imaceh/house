@@ -60,7 +60,7 @@ namespace es.dmoreno.house.core
                     {
                         if (tp.open())
                         {
-                            this._config_data = JSon.deserializeJSON<DTOConfig>(tp.getAsync().Result);
+                            this._config_data = JSon.deserializeJSON<DTOConfig>(tp.get());
                         }
                         else
                         {
@@ -75,7 +75,7 @@ namespace es.dmoreno.house.core
                         if (tp.open())
                         {
                             this._config_data = DefaultConfig;
-                            tp.set(JSon.serializeJSON<DTOConfig>(DefaultConfig)).Wait();
+                            tp.set(JSon.serializeJSON<DTOConfig>(DefaultConfig));
                         }
                         else
                         {
