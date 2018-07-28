@@ -118,8 +118,11 @@ namespace es.dmoreno.house.core
                     throw new NotImplementedException("Other database engine is not supported");
                 }
 
-                db_sch = new DBSchema(this._db_logic.Statement);
-                db_sch.generate().Wait();
+                using (Logic l = this._db_logic.duplicate())
+                {
+                    db_sch = new DBSchema(l.Statement); ;
+                    db_sch.generate().Wait();
+                }
             }
             else
             {

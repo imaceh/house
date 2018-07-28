@@ -18,7 +18,22 @@ namespace es.dmoreno.house.core.maintenance
 
         public async Task generate()
         {
-            await this._statement.createUpdateTableAsync<DTOMaster>();
+            object trans;
+
+            trans = new object();
+
+            this._statement.beginTransaction(trans);
+            try
+            {
+                await this._statement.createUpdateTableAsync<DTOMaster>();
+
+                this._statement.acceptTransaction(trans);
+            }
+            catch
+            {
+                this._statement.refuseTransaction(trans);
+            }
+
         }
     }
 }
