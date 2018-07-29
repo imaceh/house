@@ -45,8 +45,6 @@ namespace es.dmoreno.house.core
 
         private void initialize(string config_file, DTOConfig config_data)
         {
-            DBSchema db_sch;
-
             //Read configuration
             if (config_data != null)
             {
@@ -117,16 +115,21 @@ namespace es.dmoreno.house.core
                 {
                     throw new NotImplementedException("Other database engine is not supported");
                 }
-
-                using (Logic l = this._db_logic.duplicate())
-                {
-                    db_sch = new DBSchema(l.Statement); ;
-                    db_sch.generate().Wait();
-                }
             }
             else
             {
                 throw new NotImplementedException("Other persistence mode is not supported");
+            }
+        }
+
+        public void initializeDBSchema()
+        {
+            DBSchema db_sch;
+
+            using (Logic l = this._db_logic.duplicate())
+            {
+                db_sch = new DBSchema(l.Statement); ;
+                db_sch.generate().Wait();
             }
         }
     }

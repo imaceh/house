@@ -26,6 +26,7 @@ namespace es.dmoreno.house.core.maintenance
             try
             {
                 await this._statement.createUpdateTableAsync<DTOMaster>();
+                await this._statement.createUpdateTableAsync<DTODetail>();
 
                 this._statement.acceptTransaction(trans);
             }

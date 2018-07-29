@@ -10,7 +10,9 @@ namespace House
 {
 	public partial class App : Application
 	{
-		public App ()
+        static internal Core Core { get; } = new Core(Path.Combine(PathHelper.getAppDataFolder(), "config.json"));
+
+        public App ()
 		{
 			InitializeComponent();
 
@@ -20,9 +22,6 @@ namespace House
 		protected override void OnStart ()
 		{
             // Handle when your app starts
-            Core c;
-
-            c = new Core(Path.Combine(PathHelper.getAppDataFolder(), "config.json"));
         }
 
 		protected override void OnSleep ()
