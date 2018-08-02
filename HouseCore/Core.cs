@@ -31,7 +31,7 @@ namespace es.dmoreno.house.core
         private DBMSType _dbms_type;
         private DTOConfig _config_data;
 
-        private Logic _db_logic;
+        private DataBaseLogic _db_logic;
 
         public Core(string config_file)
         {
@@ -109,7 +109,7 @@ namespace es.dmoreno.house.core
             {
                 if (this._config_data.DataBase.DBMS.ToUpper() == "SQLITE")
                 {
-                    this._db_logic = new Logic(DBMSType.SQLite, Logic.createStringConnection(DBMSType.SQLite, Path.Combine(PathHelper.getAppDataFolder(), this._config_data.DataBase.Host), "", "", "", 0), null);
+                    this._db_logic = new DataBaseLogic(DBMSType.SQLite, DataBaseLogic.createStringConnection(DBMSType.SQLite, Path.Combine(PathHelper.getAppDataFolder(), this._config_data.DataBase.Host), "", "", "", 0), null);
                 }
                 else
                 {
@@ -126,10 +126,13 @@ namespace es.dmoreno.house.core
         {
             DBSchema db_sch;
 
-            using (Logic l = this._db_logic.duplicate())
+            using (DataBaseLogic l = this._db_logic.duplicate())
             {
-                db_sch = new DBSchema(l.Statement); ;
-                db_sch.generate().Wait();
+                //db_sch = new DBSchema(l.Statement); ;
+                //db_sch.generate().Wait();
+                //l.Statement.beginTransaction();
+                //l.Management.createAlterTable<DTOMaster>();
+                //l.Statement.acceptTransaction();
             }
         }
     }
