@@ -9,31 +9,17 @@ namespace es.dmoreno.house.core.maintenance
 {
     internal class DBSchema
     {
-        private SQLStatement _statement;
+        private DataBaseLogic _db;
 
-        public DBSchema(SQLStatement statement)
+        public DBSchema(DataBaseLogic db)
         {
-            this._statement = statement;
+            this._db = db;
         }
 
         public async Task generate()
         {
-            object trans;
-
-            trans = new object();
-
-            this._statement.beginTransaction(trans);
-            try
-            {
-                
-
-                this._statement.acceptTransaction(trans);
-            }
-            catch
-            {
-                this._statement.refuseTransaction(trans);
-            }
-
+            await this._db.Management.createAlterTableAsync<DTOMaster>();
+            await this._db.Management.createAlterTableAsync<DTODetail>();
         }
     }
 }

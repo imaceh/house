@@ -8,6 +8,7 @@ namespace es.dmoreno.house.core.dto
     [Table(Name = "detail", Type = EngineType.InnoDB)]
     public class DTODetail
     {
+        [Constraint(Name = "fk_detail_ref_master_to_master", Type = EConstraintType.ForeignKey, ReferencedField = "id", ReferencedTable = "master")]
         [Field(FieldName = "ref_master", AllowNull = true, IsAutoincrement = false, IsPrimaryKey = true, Type = ParamType.Int32)]
         internal int RefMaster { get; set; }
 
