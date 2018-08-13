@@ -13,5 +13,10 @@ namespace es.dmoreno.house.core.dto
 
         [Field(FieldName = "type", DefaultValue = (int)ETypeMaster.None, AllowNull = false, Type = ParamType.Int32)]
         public ETypeMaster Type { get; set; } = ETypeMaster.None;
+
+        [Field(FieldName = "date", Type = ParamType.DateTime)]
+        public DateTime Date { get; set; }
+
+        public List<DTODetail> Detail { get; set; }
     }
 }

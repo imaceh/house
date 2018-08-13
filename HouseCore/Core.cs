@@ -135,6 +135,11 @@ namespace es.dmoreno.house.core
                 await schema.generate();
                 l.Statement.acceptTransaction();
             }
+
+            Options o = new Options(this._db_connection_params);
+            o.createDBSchema();
+
+            o.LastPaymentForecastCode = 10;
         }
     }
 }
