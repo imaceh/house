@@ -1,4 +1,6 @@
-﻿using es.dmoreno.house.core.dto;
+﻿using es.dmoreno.house.core.businesslogic;
+using es.dmoreno.house.core.dto;
+using es.dmoreno.house.core.interfaces;
 using es.dmoreno.house.core.maintenance;
 using es.dmoreno.utils.dataaccess.db;
 using es.dmoreno.utils.dataaccess.textplain;
@@ -26,6 +28,23 @@ namespace es.dmoreno.house.core
                 };
             }
         }
+
+        #region Factories
+        public IMasterDetail MasterDetail
+        {
+            get
+            {
+                if (this._mode == ECoreModePersistence.DB)
+                {
+                    return new LocalMasterDetail();
+                }
+                else
+                {
+                    throw new NotImplementedException();
+                }
+            }
+        }
+        #endregion
 
         private ECoreModePersistence _mode;
         private DBMSType _dbms_type;
