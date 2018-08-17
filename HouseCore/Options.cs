@@ -13,7 +13,7 @@ namespace es.dmoreno.house.core
         {
             get
             {
-                var o = this.get("last_" + ETypeMaster.PaymentForecast.ToString()).Result;
+                var o = this.getAsync("last_" + ETypeMaster.PaymentForecast.ToString()).Result;
 
                 if (o != null)
                 {
@@ -27,7 +27,7 @@ namespace es.dmoreno.house.core
 
             set
             {
-                var o = this.get("last_" + ETypeMaster.PaymentForecast.ToString()).Result;
+                var o = this.getAsync("last_" + ETypeMaster.PaymentForecast.ToString()).Result;
 
                 if (o == null)
                 {
@@ -36,7 +36,7 @@ namespace es.dmoreno.house.core
 
                 o.ValueInteger32 = value;
 
-                this.set(o).Wait();
+                this.setAsync(o).Wait();
             }
         }
 

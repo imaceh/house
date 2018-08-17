@@ -36,9 +36,7 @@ namespace House
                 });
             }
 
-            Device.BeginInvokeOnMainThread(() => {
-                this.ltext.Text = "Iniciando...";
-            });
+            
         }
 	}
 }
