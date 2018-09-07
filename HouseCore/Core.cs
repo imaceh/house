@@ -1,4 +1,5 @@
 ﻿using es.dmoreno.house.core.businesslogic;
+using es.dmoreno.house.core.businesslogic.local;
 using es.dmoreno.house.core.dto;
 using es.dmoreno.house.core.interfaces;
 using es.dmoreno.house.core.maintenance;
@@ -36,7 +37,7 @@ namespace es.dmoreno.house.core
             {
                 if (this._mode == ECoreModePersistence.DB)
                 {
-                    return new LocalMasterDetail();
+                    return new LocalMasterDetail(this._db_connection_params);
                 }
                 else
                 {

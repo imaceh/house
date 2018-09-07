@@ -5,7 +5,7 @@ using System.Text;
 
 namespace es.dmoreno.house.core.dto
 {
-    [Table(Name = "detail", Type = EngineType.InnoDB)]
+    [Table(Name = "detail", Type = EngineType.Default)]
     public class DTODetail
     {
         [Constraint(Name = "fk_detail_ref_master_to_master", Type = EConstraintType.ForeignKey, ReferencedField = "id", ReferencedTable = "master")]
